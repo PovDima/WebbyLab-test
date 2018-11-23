@@ -50,7 +50,6 @@ class ItemModal extends React.Component {
       <div>
         <Button
           color="dark"
-          style={{ marginBottom: '2rem' }}
           onClick={this.toggle}
         >{this.props.title || 'Add Item'}
         </Button>
@@ -109,7 +108,7 @@ class ItemModal extends React.Component {
                     style={{ marginTop: '2rem' }}
                   >
                     Add Film
-              </Button>
+                  </Button>
                 </FormGroup>
               </Form>}
           </ModalBody>

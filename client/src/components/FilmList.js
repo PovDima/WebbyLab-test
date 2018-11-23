@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
+import { Container, ListGroup, ListGroupItem, Button, Row, Col } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions'
@@ -24,19 +24,21 @@ class FilmList extends React.Component {
               return (
                 <CSSTransition key={_id} timeout={500} classNames="fade">
                   <ListGroupItem>
-                    <Button
-                      className="remove-btn"
-                      color="danger"
-                      size="sm"
-                      onClick={this.onDeleteClick.bind(this, _id)}
-                    >Delete
-                </Button>
-                    {
-                      <div>
-                        <h3>Title : {name}</h3>
-                      </div>
-                    }
-                    <ItemModal id={_id} name={name} year={year} format={format} actors={actors} title={'More info'} header={'Info about Film'} />
+                    <Row>
+                      <Col xs={6} >{
+                        <h6>Title : {name}</h6>
+                      }
+                      </Col>
+                      <Col xs={6} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                        <Button
+                          className="remove-btn"
+                          color="danger"
+                          onClick={this.onDeleteClick.bind(this, _id)}
+                        >Delete
+                        </Button>
+                        <ItemModal id={_id} name={name} year={year} format={format} actors={actors} title={'More info'} header={'Info about Film'} />
+                      </Col>
+                    </Row>
                   </ListGroupItem>
                 </CSSTransition>
               )

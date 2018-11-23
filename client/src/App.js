@@ -22,6 +22,7 @@ class App extends React.Component {
     let reader = new FileReader()
     reader.readAsText(file);
     reader.onload = () => {
+      // Read data line by line
       let array = reader.result.split("\n");
       let obj = {}
       for (let i in array) {
@@ -49,27 +50,26 @@ class App extends React.Component {
   }
   render() {
     return (
-
       <div className="App">
         <AppNavbar />
         <Container>
           <Row>
-            <Col xs={4}>
+            <Col xs={6} sm={6} md={4} lg={4}>
               <ItemModal />
             </Col>
-            <Col xs={4}>
+            <Col xs={6} sm={6} md={4} lg={4}>
               <input onInput={this.onInput}
                 id="flat-button-file"
                 type="file"
-                style={{display:'none'}}
+                style={{ display: 'none' }}
               />
               <label htmlFor="flat-button-file">
-              <Button color='dark' component="span" >
-                Upload File
+                <Button color='dark' component="span" >
+                  Upload File
               </Button>
-            </label>
+              </label>
             </Col>
-            <Col xs={4}>
+            <Col xs={12} md={4} lg={4}>
               <InputGroup>
                 <Input name={'text'} placeholder={'Search'} onChange={this.onChange} />
                 <InputGroupAddon addonType="append">
