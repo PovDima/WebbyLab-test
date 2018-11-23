@@ -18,16 +18,16 @@ npm run client
 ```
 ## Architecture explanation
 
-Приложение предназначено для хранения информации о фильмах, добавление новых фильмов, удаление фильмов и поиска фильмов по названию и актерам.
+The application is designed to store information about movies, add new movies, delete movies and search for movies by name and actors.
 
-Для создание приложения я использовал такие технологии :
-1. React для графического представления.
-2. Redux Express для контроля 
-состояния приложения
-3. MongoDB для хранение данных 
+To create an application, I used the following technologies:
+1. React for graphical representation.
+2. Redux Express to control
+application states
+3. MongoDB for data storage
 
-Глобальное состояния приложение меняеться с помощью Redux через  сервер
-Для того чтобы данные сохранялись после перезагрузки сервера я использую mLAB 
+Global state of the application is changed using Redux through the server
+In order for the data to be saved after the server restart, I use mLAB
 
-Для представление этого я построил диаграмму UML
+To represent this, I built a UML diagram
 ![alt-текст](https://github.com/PovDima/WebbyLab-test/master/usecase.jpg)
