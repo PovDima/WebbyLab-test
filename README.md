@@ -30,4 +30,4 @@ Global state of the application is changed using Redux through the server
 In order for the data to be saved after the server restart, I use mLAB
 
 To represent this, I built a UML diagram
-![alt-текст](https://github.com/PovDima/WebbyLab-test/master/usecase.jpg)
+![alt-текст](https://github.com/PovDima/WebbyLab-test/blob/master/usecase.jpg)
