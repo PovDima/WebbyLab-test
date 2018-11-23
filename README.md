@@ -31,4 +31,10 @@ In order for the data to be saved after the server restart, I use mLAB
 
 To represent this, I built a UML diagram
 
+<<<<<<< HEAD
 ![alt-текст](https://github.com/PovDima/WebbyLab-test/master/usecase.jpg)
+=======
+![alt-текст][img]
+
+[img]: https://github.com/PovDima/WebbyLab-test/blob/master/usecase.jpg
+>>>>>>> 4e15fbc0ab93ddde013b88fad9a04118633beae6
