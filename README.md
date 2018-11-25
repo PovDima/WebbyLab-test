@@ -2,7 +2,7 @@
 ## How to Install:
 To install and launch project run these commands in console:
 ```
-npm up
+npm install
 npm run client-install
 npm run dev
 
